@@ -124,3 +124,32 @@ graph TD
     A --> F
     A --> G
 ```
+
+## EigenPod 
+```mermaid
+graph TD
+    subgraph EigenPodManager
+        A[EigenPodManager Contract] --> B[Pod Registry]
+        A --> C[ETH Accounting]
+        A --> D[Validator Management]
+        
+        B --> B1[Pod Deployment]
+        B --> B2[Pod Status]
+        
+        C --> C1[ETH Balance]
+        C --> C2[Rewards Tracking]
+        
+        D --> D1[Validator Registry]
+        D --> D2[Withdrawal Credentials]
+    end
+
+    subgraph BeaconChain Integration
+        E[Oracle Updates]
+        F[Balance Verification]
+        G[Withdrawal Processing]
+    end
+
+    A --> E
+    A --> F
+    A --> G
+```
