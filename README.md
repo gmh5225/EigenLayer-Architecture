@@ -153,3 +153,32 @@ graph TD
     A --> F
     A --> G
 ```
+
+## PaymentCoordinator
+```mermaid
+graph TD
+    subgraph PaymentCoordinator
+        A[PaymentCoordinator Contract] --> B[Payment Registry]
+        A --> C[Distribution Logic]
+        A --> D[Merkle Verification]
+        
+        B --> B1[Payment Records]
+        B --> B2[Payment Status]
+        
+        C --> C1[Reward Calculation]
+        C --> C2[Commission Rules]
+        
+        D --> D1[Merkle Root Storage]
+        D --> D2[Proof Verification]
+    end
+
+    subgraph Payment Processing
+        E[Range Payments]
+        F[Claim Processing]
+        G[Distribution Updates]
+    end
+
+    A --> E
+    A --> F
+    A --> G
+```
