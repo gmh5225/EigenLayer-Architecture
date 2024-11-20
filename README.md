@@ -68,3 +68,30 @@ graph TD
     A --> F
     A --> G
 ```
+
+## DelegationManager 
+```mermaid
+graph TD
+    subgraph DelegationManager
+        A[DelegationManager Contract] --> B[Operator Registry]
+        A --> C[Delegation Records]
+        A --> D[Share Management]
+        
+        B --> B1[Operator Status]
+        B --> B2[Service Registry]
+        
+        C --> C1[Staker-Operator Mapping]
+        C --> C2[Delegation History]
+        
+        D --> D1[Operator Shares]
+        D --> D2[Delegation Shares]
+    end
+
+    subgraph AVS Integration
+        E[AVS Registration]
+        F[Service Verification]
+    end
+
+    A --> E
+    A --> F
+```
