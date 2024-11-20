@@ -1,5 +1,5 @@
 # EigenLayer-Architecture
-
+EigenLayer is an Ethereum infrastructure protocol that enhances Ethereum's security and functionality through a restaking mechanism.
 
 ## Architecture Diagram
 ```mermaid
