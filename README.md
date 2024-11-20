@@ -73,7 +73,11 @@ graph TD
     A --> G
 ```
 
-## DelegationManager 
+## DelegationManager
+- Managing staker-operator relationships
+- Delegation record keeping
+- Operator registration
+- Share distribution management
 ```mermaid
 graph TD
     subgraph DelegationManager
@@ -101,6 +105,10 @@ graph TD
 ```
 
 ## SlasherManager
+- Slashing mechanism management
+- Permission control
+- Penalty execution
+- Slashing history tracking
 ```mermaid
 graph TD
     subgraph SlasherManager
@@ -130,6 +138,10 @@ graph TD
 ```
 
 ## EigenPod 
+- Native ETH staking management
+- Validator operations
+- ETH accounting
+- Withdrawal credential management
 ```mermaid
 graph TD
     subgraph EigenPodManager
@@ -159,6 +171,10 @@ graph TD
 ```
 
 ## PaymentCoordinator
+- Payment distribution
+- Reward calculations
+- Commission management
+- Payment verification
 ```mermaid
 graph TD
     subgraph PaymentCoordinator
