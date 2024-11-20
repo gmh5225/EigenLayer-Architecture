@@ -41,6 +41,10 @@ graph TD
 ```
 
 ## TokenManager
+- Token management and share calculations
+- LST token integration
+- Withdrawal processing
+- Share accounting system
 ```mermaid
 graph TD
     subgraph TokenManager
