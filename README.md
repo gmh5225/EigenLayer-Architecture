@@ -95,3 +95,32 @@ graph TD
     A --> E
     A --> F
 ```
+
+## SlasherManager
+```mermaid
+graph TD
+    subgraph SlasherManager
+        A[SlasherManager Contract] --> B[Slashing Registry]
+        A --> C[Permission Control]
+        A --> D[Slashing Execution]
+        
+        B --> B1[Slashed Operators]
+        B --> B2[Slashing History]
+        
+        C --> C1[AVS Permissions]
+        C --> C2[Veto Rights]
+        
+        D --> D1[Slashing Logic]
+        D --> D2[Penalty Calculation]
+    end
+
+    subgraph AVS Slashers
+        E[Bridge Slasher]
+        F[Oracle Slasher]
+        G[Sequencer Slasher]
+    end
+
+    A --> E
+    A --> F
+    A --> G
+```
